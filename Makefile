@@ -157,6 +157,8 @@ LDFLAGS += -mcpu=cortex-m0
 LDFLAGS += -Wl,--gc-sections
 # use newlib in nano version
 LDFLAGS += --specs=nano.specs -lc -lnosys
+# use math.h acos sqrt
+LIBS += -lm
 
 # Assembler flags
 ASMFLAGS += -x assembler-with-cpp
